@@ -259,7 +259,7 @@ class SGDMD(torch.optim.Optimizer):
                 t = st["step"]
 
                 # α_t = lr / sqrt(t), t=60 epouchs
-                lr_t = lr/  math.sqrt(10)
+                lr_t = lr/  math.sqrt(t)
 
                 # g_t
                 g = p.grad.data
